@@ -1,4 +1,6 @@
-const BASE_URL = 'https://api.example.com'; // Замініть на вашу базову URL
+import { CONSTANTS } from 'constants/constants.js'
+
+const BASE_URL = CONSTANTS.BASE_URL;
 
 export const fetchData = async (endpoint, params = {}) => {
   const url = `${BASE_URL}${endpoint}`;
