@@ -1,32 +1,15 @@
-import { Outlet, Link } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import './Layout.css';
-import '../../static files/layout/images';
+
+import Header from '../../components/header/header'
+import Footer from '../../components/footer/footer'
 
 const Layout = () => {
   return (
     <>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/cottagenewway">Cottage new way</Link>
-            </li>
-            <li>
-              <Link to="/catalog">Catalog</Link>
-            </li>
-            <li>
-              <Link to="/archive">Archive</Link>
-            </li>
-            <li>
-              <Link to="/aboutus">About us</Link>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <Header />
       <Outlet />
+      <Footer />
     </>
   )
 };
