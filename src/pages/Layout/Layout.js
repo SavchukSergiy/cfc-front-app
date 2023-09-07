@@ -1,5 +1,7 @@
 import { Outlet, Link } from "react-router-dom";
 import './Layout.css';
+import '../../static files/layout/images';
+
 const Layout = () => {
   return (
     <>
