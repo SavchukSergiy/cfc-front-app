@@ -1,15 +1,16 @@
 import { Link } from "react-router-dom";
 import './header.css';
-import logo from './static-files/logo.png';
+import logo from './static-files/logo.svg';
 
 
 const Header = () => {
   return (
     <header>
-      <nav class="navbar navbar-expand-lg custom-header">
+      <nav class="navbar navbar-expand-lg custom-header fixed-top">
         <div class="container">
           <Link to="/" className="navbar-brand">
             <img src={logo} alt="Logo" width="112" height="47.78" class="img-fluid" />
+
           </Link>
 
           <span class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,14 +37,16 @@ const Header = () => {
               </li>
             </ul>
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <select class="form-control">
-                  <option>UA</option>
-                  <option>EN</option>
-                </select>
+              <li class="nav-item custom-li fs-6">
+                <li class="nav-item">
+                  <select class="form-select mt-1">
+                    <option>UA</option>
+                    <option>EN</option>
+                  </select>
+                </li>
               </li>
-              <li class="nav-item">
-                <button class="btn btn-success ml-3">Write to us</button>
+              <li class="nav-item btn-write-us">
+                <div class="custom-button fs-6" id="myButton">НАПИШІТЬ НАМ</div>
               </li>
             </ul>
           </div>
