@@ -1,7 +1,11 @@
 import './CottageNewWay.css';
 
 const CottageNewWay = () => {
-  return <h1>Cottage New Way</h1>;
+  return (
+    <div class='container'>
+      <h1>Cottage  new way</h1>
+    </div>
+  );
 };
 
 export default CottageNewWay;

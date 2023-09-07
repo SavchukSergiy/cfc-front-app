@@ -1,7 +1,11 @@
 import './Archive.css';
 
 const Archive = () => {
-  return <h1>Archive</h1>;
+  return (
+    <div class='container'>
+      <h1>Archive</h1>
+    </div>
+  );
 };
 
 export default Archive;

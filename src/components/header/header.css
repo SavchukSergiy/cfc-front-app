@@ -1,4 +1,44 @@
+@font-face {
+  font-family: 'MacPaw Fixel';
+  src: url('../../fonts/FixelText/FixelText-SemiBold.ttf') format('truetype');
+}
+
 .custom-header {
   background-color: rgba(255, 255, 255, 0.9);
   color: black;
+}
+
+.nav-link {
+  font-family: MacPaw Fixel;
+  color: black;
+}
+
+.nav-link:hover {
+  color: #47accc;
+}
+
+.nav-link:focus {
+  color: #47accc;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+}
+
+.custom-li {
+  margin-right: 25px;
+}
+
+@media (max-width: 767px) {
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-nav .nav-item {
+    text-align: center;
+  }
+
+  .custom-li {
+    margin-right: 0px;
+  }
 }

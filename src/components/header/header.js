@@ -1,34 +1,38 @@
 import { Link } from "react-router-dom";
 import './header.css';
+import logo from './static-files/logo.png';
+
 
 const Header = () => {
   return (
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light custom-header">
+      <nav class="navbar navbar-expand-lg custom-header">
         <div class="container">
-          <Link to="/" className="navbar-brand">Logo</Link>
+          <Link to="/" className="navbar-brand">
+            <img src={logo} alt="Logo" width="112" height="47.78" class="img-fluid" />
+          </Link>
 
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <svg width="27" height="15" viewBox="0 0 27 15" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect y="6.35345" width="26.9997" height="2" fill="#4AABCB" />
               <rect x="13.1445" y="12.3535" width="13.8551" height="2" fill="#4AABCB" />
               <rect y="0.353455" width="26.9997" height="2" fill="#4AABCB" />
             </svg>
-          </button>
+          </span>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <Link to="/cottagenewway" className="nav-link active">Cottage new way</Link>
+            <ul class="navbar-nav mx-auto  mb-2 mb-lg-0">
+              <li class="nav-item custom-li">
+                <Link to="/cottagenewway" className="nav-link active fs-6 ">ДАЧА ПО-НОВОМУ</Link>
               </li>
-              <li class="nav-item">
-                <Link to="/catalog" className="nav-link">Catalog</Link>
+              <li class="nav-item custom-li">
+                <Link to="/catalog" className="nav-link fs-6">КАТАЛОГ</Link>
               </li>
-              <li class="nav-item">
-                <Link to="/archive" className="nav-link">Archive</Link>
+              <li class="nav-item custom-li">
+                <Link to="/archive" className="nav-link fs-6">АРХІВ</Link>
               </li>
-              <li class="nav-item">
-                <Link to="/aboutus" className="nav-link">About us</Link>
+              <li class="nav-item custom-li">
+                <Link to="/aboutus" className="nav-link fs-6">ПРО НАС</Link>
               </li>
             </ul>
             <ul class="navbar-nav ml-auto">
