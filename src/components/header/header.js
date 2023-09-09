@@ -1,14 +1,21 @@
 import { Link } from "react-router-dom";
 import './header.css';
 import logo from './static-files/logo.svg';
+import LngSwitcher from './../lngswitcher/lngswitcher.js';
 
 
 const Header = () => {
+  function collapseNavbar() {
+    var navbarCollapse = document.querySelector(".navbar-collapse");
+    if (navbarCollapse.classList.contains("show")) {
+      navbarCollapse.classList.remove("show");
+    }
+  }
   return (
     <header>
       <nav class="navbar navbar-expand-lg custom-header fixed-top">
         <div class="container">
-          <Link to="/" className="navbar-brand">
+          <Link to="/" className="navbar-brand" onClick={collapseNavbar}>
             <img src={logo} alt="Logo" width="112" height="47.78" class="img-fluid" />
 
           </Link>
@@ -24,25 +31,22 @@ const Header = () => {
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto  mb-2 mb-lg-0">
               <li class="nav-item custom-li">
-                <Link to="/cottagenewway" className="nav-link active fs-6 ">ДАЧА ПО-НОВОМУ</Link>
+                <Link to="/cottagenewway" className="nav-link active fs-6" onClick={collapseNavbar}>ДАЧА ПО-НОВОМУ</Link>
               </li>
               <li class="nav-item custom-li">
-                <Link to="/catalog" className="nav-link fs-6">КАТАЛОГ</Link>
+                <Link to="/catalog" className="nav-link fs-6" onClick={collapseNavbar}>КАТАЛОГ</Link>
               </li>
               <li class="nav-item custom-li">
-                <Link to="/archive" className="nav-link fs-6">АРХІВ</Link>
+                <Link to="/archive" className="nav-link fs-6" onClick={collapseNavbar}>АРХІВ</Link>
               </li>
               <li class="nav-item custom-li">
-                <Link to="/aboutus" className="nav-link fs-6">ПРО НАС</Link>
+                <Link to="/aboutus" className="nav-link fs-6" onClick={collapseNavbar}>ПРО НАС</Link>
               </li>
             </ul>
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item custom-li fs-6">
+              <li class="nav-item lng-switcher fs-6">
                 <li class="nav-item">
-                  <select class="form-select mt-1">
-                    <option>UA</option>
-                    <option>EN</option>
-                  </select>
+                  <LngSwitcher></LngSwitcher>
                 </li>
               </li>
               <li class="nav-item btn-write-us">

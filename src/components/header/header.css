@@ -6,13 +6,13 @@
 header {
   font-family: MacPaw Fixel;
   color: black;
-  border: 1px solid red;
 }
 
 .custom-header {
   background-color: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(4px);
   color: black;
+  min-height: 85px;
 }
 
 .nav-link {
@@ -33,12 +33,16 @@ header {
 }
 
 .custom-li {
-  margin-right: 25px;
+  margin-right: 35px;
+}
+
+.lng-switcher {
+  margin-right: 10px;
 }
 
 .custom-button {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 10px 15px;
   background-color: transparent;
   color: #000;
   border: 2px solid #47accc;
@@ -67,5 +71,16 @@ header {
 
   .btn-write-us {
     margin-top: 15px;
+  }
+
+  .custom-header {
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(4px);
+    color: black;
+    min-height: 55px;
+  }
+
+  .lng-switcher {
+    margin-right: 0px;
   }
 }
