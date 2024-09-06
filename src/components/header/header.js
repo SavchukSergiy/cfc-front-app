@@ -11,6 +11,10 @@ const Header = () => {
       navbarCollapse.classList.remove("show");
     }
   }
+
+  function ownAlert() {
+    alert('Text');
+  }
   return (
     <header>
       <nav class="navbar navbar-expand-lg custom-header fixed-top">
@@ -50,7 +54,7 @@ const Header = () => {
                 </li>
               </li>
               <li class="nav-item btn-write-us">
-                <div class="custom-button fs-6" id="myButton">НАПИШІТЬ НАМ</div>
+                <div class="custom-button fs-6" id="myButton" onClick={ownAlert}>НАПИШІТЬ НАМ</div>
               </li>
             </ul>
           </div>
