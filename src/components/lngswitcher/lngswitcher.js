@@ -20,10 +20,13 @@ const LngSwitcher = () => {
       >
         {lng}
       </a>
-      <ul class="dropdown-menu">
+      <ul class="dropdown-menu submenu-custom">
         <li><a class="dropdown-item" href="#" onClick={(e) => { e.preventDefault(); handleLngFunction('UA'); }}>UA</a></li>
         <li>
           <a class="dropdown-item" href="#" onClick={(e) => { e.preventDefault(); handleLngFunction('EN'); }}> EN</a>
+        </li>
+        <li>
+          <a class="dropdown-item" href="#" onClick={(e) => { e.preventDefault(); handleLngFunction('PL'); }}> PL</a>
         </li>
       </ul>
     </div>
