@@ -1,20 +1,27 @@
 import './Home.css';
-import Image from './images/A-Frame-Main.png';
+import Image from './images/A-Frame-Main.jpg';
 
 const Home = () => {
   return (
-    <div >
-      <div class="background-container">
-        <div class="overlay">
-          <div class="content">
-            <div>Власне житло за <span className='digitStyle'>8</span> тижнів</div>
-          </div>
-        </div>
+    // <div className='container-img'>
+    //   <img src={Image} alt="A-Frame foto" class="img-fluid w-100"></img>
+    // </div>
+    <>
+
+      <div className='full-screen-block '>
+      <img src={Image} alt="A-Frame foto" class="img-fluid w-100"></img>
       </div>
-      <div className='testBlock'>
-        New Block
+
+      <div>
+        <p>asdfasdfsadfsadfsadfsadfsdaf</p>
+        <p>asdfasdfsadfsadfsadfsadfsdaf</p>
+        <p>asdfasdfsadfsadfsadfsadfsdaf</p>
+        <p>asdfasdfsadfsadfsadfsadfsdaf</p>
+        <p>asdfasdfsadfsadfsadfsadfsdaf</p>
+        <p>asdfasdfsadfsadfsadfsadfsdaf</p>
+        <p>asdfasdfsadfsadfsadfsadfsdaf</p>
       </div>
-    </div>
+    </>
   );
 };
 
