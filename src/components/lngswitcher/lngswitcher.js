@@ -2,18 +2,31 @@ import React, { useState } from "react";
 import './lngswitcher.css';
 
 const LngSwitcher = () => {
-  const [lng, setLng] = useState('ua');
+  const [lng, setLng] = useState('UA');
 
-  const handleLngChange = (e) => {
-    const newLng = e.target.value;
-    setLng(newLng);
+  const handleLngFunction = (value) => {
+    setLng(value);
   };
 
+
   return (
-    <select className="form-control lng-switcher-select-style" value={lng} onChange={handleLngChange}>
-      <option value="ua">UA</option>
-      <option value="en">EN</option>
-    </select>
+    <div className="nav-item dropdown lng-switcher-select-style">
+      <a
+        class="nav-link dropdown-toggle"
+        href="#"
+        role="button"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        {lng}
+      </a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#" onClick={(e) => { e.preventDefault(); handleLngFunction('UA'); }}>UA</a></li>
+        <li>
+          <a class="dropdown-item" href="#" onClick={(e) => { e.preventDefault(); handleLngFunction('EN'); }}> EN</a>
+        </li>
+      </ul>
+    </div>
   );
 };
 

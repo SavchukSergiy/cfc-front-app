@@ -3,10 +3,7 @@ import Image from './images/A-Frame-Main.png';
 
 const Home = () => {
   return (
-    // <div className='container-fluid'>
-    //   <img src={Image} className='rounded-right img-fluid' width='100%'></img>
-    // </div>
-    <div className='container-fluid'>
+    <div >
       <div class="background-container">
         <div class="overlay">
           <div class="content">

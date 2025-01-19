@@ -17,46 +17,39 @@ const Header = () => {
   }
   return (
     <header>
-      <nav class="navbar navbar-expand-lg custom-header fixed-top">
-        <div class="container">
-          <Link to="/" className="navbar-brand" onClick={collapseNavbar}>
-            <img src={logo} alt="Logo" width="112" height="47.78" class="img-fluid" />
-
-          </Link>
-
-          <span class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <svg width="27" height="15" viewBox="0 0 27 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect y="6.35345" width="26.9997" height="2" fill="#4AABCB" />
-              <rect x="13.1445" y="12.3535" width="13.8551" height="2" fill="#4AABCB" />
-              <rect y="0.353455" width="26.9997" height="2" fill="#4AABCB" />
-            </svg>
-          </span>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto  mb-2 mb-lg-0">
-              <li class="nav-item custom-li">
-                <Link to="/cottagenewway" className="nav-link active fs-6" onClick={collapseNavbar}>ДАЧА ПО-НОВОМУ</Link>
-              </li>
-              <li class="nav-item custom-li">
-                <Link to="/catalog" className="nav-link fs-6" onClick={collapseNavbar}>КАТАЛОГ</Link>
-              </li>
-              <li class="nav-item custom-li">
-                <Link to="/archive" className="nav-link fs-6" onClick={collapseNavbar}>АРХІВ</Link>
-              </li>
-              <li class="nav-item custom-li">
-                <Link to="/aboutus" className="nav-link fs-6" onClick={collapseNavbar}>ПРО НАС</Link>
-              </li>
-            </ul>
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item lng-switcher fs-6">
-                <li class="nav-item">
-                  <LngSwitcher></LngSwitcher>
-                </li>
-              </li>
-              <li class="nav-item btn-write-us">
-                <div class="custom-button fs-6" id="myButton" onClick={ownAlert}>НАПИШІТЬ НАМ</div>
-              </li>
-            </ul>
+      <nav class="navbar navbar-expand-lg  custom-header fixed-top">
+        <Link to="/" className="navbar-brand logo" onClick={collapseNavbar}>
+          <img src={logo} alt="Logo" class="img-fluid" />
+        </Link>
+        <span class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <svg width="27" height="15" viewBox="0 0 27 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="6.35345" width="26.9997" height="2" fill="#4AABCB" />
+            <rect x="13.1445" y="12.3535" width="13.8551" height="2" fill="#4AABCB" />
+            <rect y="0.353455" width="26.9997" height="2" fill="#4AABCB" />
+          </svg>
+        </span>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto  mb-2 mb-lg-0">
+            <li class="nav-item custom-li">
+              <Link to="/cottagenewway" className="nav-link active fs-6" onClick={collapseNavbar}>ДАЧА ПО-НОВОМУ</Link>
+            </li>
+            <li class="nav-item custom-li">
+              <Link to="/catalog" className="nav-link fs-6" onClick={collapseNavbar}>КАТАЛОГ</Link>
+            </li>
+            <li class="nav-item custom-li">
+              <Link to="/archive" className="nav-link fs-6" onClick={collapseNavbar}>АРХІВ</Link>
+            </li>
+            <li class="nav-item custom-li">
+              <Link to="/aboutus" className="nav-link fs-6" onClick={collapseNavbar}>ПРО НАС</Link>
+            </li>
+          </ul>
+          <div className="d-flex flex-column flex-lg-row right-block">
+            <div className="LngSwitcherWrapper">
+              <LngSwitcher></LngSwitcher>
+            </div>
+            <div className="nav-item btn-write-us">
+              <div class="custom-button fs-6" id="myButton" onClick={ownAlert}>НАПИШІТЬ НАМ</div>
+            </div>
           </div>
         </div>
       </nav>
