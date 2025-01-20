@@ -59,13 +59,16 @@ const Home = () => {
         </div>
       </div>
 
-      <StatisticBlock />
+      <StatisticBlock title1="10" title2="50" title3="100%" description1="Років досвіду" description2="Років гарантії" description3="Фіксована ціна" />
 
       <InfoBlock backImage={BgdImage} image={AboutImage} arrowImage={AboutArrow}
         title={"COMFORT FRAME"} subTitle={"COMPANY"} description={desctiption} isArrow={true} isBtn={false} isRevert={false} />
 
       <InfoBlock backImage={BgdImage} image={DachaImage} arrowImage={AboutArrow}
         title={"ДАЧА"} subTitle={"ПО НОВОМУ"} description={desctiption} isArrow={false} isBtn={true} isRevert={true} />
+
+      <StatisticBlock title1="ЕКО" title2="ЕНЕРГО" title3="РОЗШИРЕННЯ" description1="Екологічно безпечні матеріали та технології"
+        description2="Енергоефективна технологія будівництва та якісні утеплюваніі матеріали" description3="Можливість розширення площі шляхом приєднання додаткового модулю" />
 
       <InfoBlock backImage={BgdImage} image={ArchiveImage} arrowImage={AboutArrow}
         title={"АРХІВ"} subTitle={"ЯК ЦЕ БУЛО"} description={desctiption} isArrow={true} isBtn={false} isRevert={false} />
