@@ -2,9 +2,16 @@ import './Home.css';
 import Image from './images/A-Frame-Main.jpg';
 import ImageMobile from './images/A-Frame-Main-Mobile.jpg';
 import StatisticBlock from '../../components/statisticBlock/staticticblock';
-import AboutBlock from '../../components/aboutBlock/aboutblock';
+import InfoBlock from '../../components/infoBlock/infoblock';
+import BgdImage from '../../components/generalImages/vector.jpg';
+import AboutImage from '../../components/generalImages/45.jpg';
+import AboutArrow from '../../components/generalImages/Arrow 8.jpg';
+import DachaImage from '../../components/generalImages/dacha-new.jpg';
 
 const Home = () => {
+  const desctiption = (
+    <p><b>Comfort Frame Company</b> – виробник модульних каркасних будинків, що пропонує високоякісне, мобільне, доступне та енергоефективне житло. Ми будуємо мобільне, екологічне та енергоефективне, а головне за доступними цінами!</p>
+  );
   return (
     <>
       <div className='image-wrapper d-none d-md-block'>
@@ -52,7 +59,11 @@ const Home = () => {
       </div>
 
       <StatisticBlock />
-      <AboutBlock />
+      <InfoBlock backImage={BgdImage} image={AboutImage} arrowImage={AboutArrow}
+        title={"COMFORT FRAME"} subTitle={"COMPANY"} description={desctiption} isArrow={true} isBtn={false} isRevert={false} />
+
+      <InfoBlock backImage={BgdImage} image={DachaImage} arrowImage={AboutArrow}
+        title={"ДАЧА"} subTitle={"ПО НОВОМУ"} description={desctiption} isArrow={false} isBtn={true} isRevert={true} />
     </>
   );
 };

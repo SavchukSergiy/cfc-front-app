@@ -1,0 +1,136 @@
+.info-us-main {
+  margin-top: 4%;
+}
+
+.info-img-block {
+  padding-left: 10%;
+  padding-bottom: 5%;
+  height: 100%;
+}
+
+.info-img-block-revert {
+  padding-right: 10%;
+  padding-bottom: 5%;
+  height: 100%;
+}
+
+.info-text-block {
+  padding-top: 7.5%;
+}
+
+.info-back-image {
+  position: relative;
+  display: inline-block;
+}
+
+.info-back-image::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30%;
+  /* Висота блюру */
+  background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+  filter: blur(15px);
+  z-index: 1;
+}
+
+.back-image-vector {
+  width: 100%;
+  height: 100%;
+}
+
+.mirrow {
+  transform: scaleX(-1);
+}
+
+.infoimg-border {
+  border-radius: 0% 5% 0% 5%;
+  border: 3px solid #47accc;
+  position: absolute;
+  z-index: -1;
+  padding-left: 28%;
+  padding-top: 32%;
+}
+
+.infoimg-border-revert {
+  border-radius: 5% 0% 5% 0%;
+  border: 3px solid #47accc;
+  position: absolute;
+  z-index: -1;
+  padding-left: 27.3%;
+  margin-left: 4%;
+  padding-top: 32%;
+}
+
+.info-overlay {
+  padding-left: 4%;
+  padding-top: 4%;
+}
+
+.info-overlay-revert {
+  padding-left: 0%;
+  padding-right: 4%;
+  padding-top: 4%;
+}
+
+.info-title {
+  font-size: 3.2rem;
+  color: #47accc;
+}
+
+.info-subtitle {
+  font-size: 3rem;
+}
+
+.info-description {
+  padding-top: 5%;
+  font-size: 1.2rem;
+}
+
+.arow-block {
+  float: left;
+  padding-top: 2%;
+}
+
+.text-block {
+  padding-left: 20%;
+}
+
+@media (min-width: 320px) and (max-width: 767.98px) {
+  .infoimg-border {
+    border-radius: 0% 5% 35% 5%;
+    border: 3px solid #47accc;
+    position: absolute;
+    z-index: -1;
+    padding-left: 79%;
+    padding-top: 89%;
+  }
+
+  .infoimg-border-revert {
+    border-radius: 5% 0% 5% 0%;
+    border: 3px solid #47accc;
+    position: absolute;
+    z-index: -1;
+    padding-left: 75%;
+    margin-left: 12%;
+    padding-top: 89%;
+  }
+
+  .info-title {
+    font-size: 3rem;
+    color: #47accc;
+  }
+
+  .info-subtitle {
+    font-size: 2.8rem;
+  }
+
+  .info-overlay-revert {
+    padding-left: 0%;
+    padding-right: 4%;
+    padding-top: 4%;
+  }
+
+}
