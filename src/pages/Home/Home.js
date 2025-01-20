@@ -7,6 +7,7 @@ import BgdImage from '../../components/generalImages/vector.jpg';
 import AboutImage from '../../components/generalImages/45.jpg';
 import AboutArrow from '../../components/generalImages/Arrow 8.jpg';
 import DachaImage from '../../components/generalImages/dacha-new.jpg';
+import ArchiveImage from '../../components/generalImages/archive-photo.jpg';
 
 const Home = () => {
   const desctiption = (
@@ -59,11 +60,15 @@ const Home = () => {
       </div>
 
       <StatisticBlock />
+
       <InfoBlock backImage={BgdImage} image={AboutImage} arrowImage={AboutArrow}
         title={"COMFORT FRAME"} subTitle={"COMPANY"} description={desctiption} isArrow={true} isBtn={false} isRevert={false} />
 
       <InfoBlock backImage={BgdImage} image={DachaImage} arrowImage={AboutArrow}
         title={"ДАЧА"} subTitle={"ПО НОВОМУ"} description={desctiption} isArrow={false} isBtn={true} isRevert={true} />
+
+      <InfoBlock backImage={BgdImage} image={ArchiveImage} arrowImage={AboutArrow}
+        title={"АРХІВ"} subTitle={"ЯК ЦЕ БУЛО"} description={desctiption} isArrow={true} isBtn={false} isRevert={false} />
     </>
   );
 };
