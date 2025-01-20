@@ -57,8 +57,8 @@ const InfoBlock = ({ backImage, image, arrowImage, title, subTitle, description,
                 {description}
               </p>
               {isBtn ? (
-                <div class="buttons">
-                  <a href="#" class="btn btn-filled">ТЕКСТ КНОПКИ</a>
+                <div class="buttons-info-block">
+                  <a href="#" class="btn btn-filled">Детальніше</a>
                 </div>
               ) : (
                 <> </>
