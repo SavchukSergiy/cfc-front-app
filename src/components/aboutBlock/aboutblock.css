@@ -22,7 +22,7 @@
   z-index: -1;
 }
 
-.overlay {
+.about-overlay {
   padding-left: 4%;
   padding-top: 4%;
 }
@@ -48,4 +48,15 @@
 
 .text-block {
   padding-left: 20%;
+}
+
+@media (min-width: 320px) and (max-width: 767.98px) {
+  /* .aboutimg-border {
+    width: 60%;
+    height: 66%;
+    border-radius: 0% 5% 0% 5%;
+    border: 3px solid #47accc;
+    position: absolute;
+    z-index: -1;
+  } */
 }

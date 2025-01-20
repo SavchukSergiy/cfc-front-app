@@ -8,14 +8,14 @@ const AboutBlock = () => {
     <>
       <div className='about-us-main'>
         <div className='row'>
-          <div className='col-5 about-img-block'>
+          <div className='col-md-5 about-img-block'>
             <div className='aboutimg-border'></div>
-            <div className='overlay'>
+            <div className='about-overlay'>
               <img src={AboutImage} alt="About image" class="img-fluid w-100"></img>
             </div>
           </div>
-          <div className='col-4 about-text-block'>
-            <div className='arow-block'>
+          <div className='col-md-4 about-text-block'>
+            <div className='arow-block d-none d-sm-block'>
               <img src={AboutArrow} alt="Arrow image" class="img-fluid"></img>
             </div>
 
@@ -28,7 +28,7 @@ const AboutBlock = () => {
               </p>
             </div>
           </div>
-          <div className='col-3 about-back-image'>
+          <div className='col-md-3 about-back-image d-none d-sm-block'>
             <img src={BgdImage} alt="Background image" class=" back-image-vector img-fluid w-100 "></img>
           </div>
         </div>
