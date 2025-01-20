@@ -1,19 +1,12 @@
-.about-us-main {
-  border: 1px solid red;
-  /* max-height: 200px; */
-}
-
 .about-img-block {
   padding-left: 10%;
   padding-bottom: 5%;
   height: 100%;
 }
 
-.about-text {
-  border: 1px solid red;
+.about-text-block {
+  padding-top: 7.5%;
 }
-
-.about-back-image {}
 
 .back-image-vector {
   width: 100%;
@@ -32,4 +25,27 @@
 .overlay {
   padding-left: 4%;
   padding-top: 4%;
+}
+
+.about-title {
+  font-size: 3.2rem;
+  color: #47accc;
+}
+
+.about-subtitle {
+  font-size: 3rem;
+}
+
+.about-description {
+  padding-top: 5%;
+  font-size: 1.2rem;
+}
+
+.arow-block {
+  float: left;
+  padding-top: 2%;
+}
+
+.text-block {
+  padding-left: 15%;
 }
