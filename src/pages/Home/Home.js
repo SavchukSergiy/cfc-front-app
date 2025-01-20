@@ -40,11 +40,11 @@ const Home = () => {
                 <i class="fas fa-phone-alt"></i>
               </a>
             </div>
-            {/* <div className='pagination'>
+            <div className='pagination'>
               <span class="dot active"></span>
               <span class="dot"></span>
               <span class="dot"></span>
-            </div> */}
+            </div>
           </div>
         </div>
       </div>
