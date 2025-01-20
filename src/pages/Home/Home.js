@@ -1,6 +1,7 @@
 import './Home.css';
 import Image from './images/A-Frame-Main.jpg';
 import ImageMobile from './images/A-Frame-Main-Mobile.jpg';
+import StatisticBlock from '../../components/statisticBlock/staticticblock';
 
 const Home = () => {
   return (
@@ -49,15 +50,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div>
-        <p>asdfasdfsadfsadfsadfsadfsdaf</p>
-        <p>asdfasdfsadfsadfsadfsadfsdaf</p>
-        <p>asdfasdfsadfsadfsadfsadfsdaf</p>
-        <p>asdfasdfsadfsadfsadfsadfsdaf</p>
-        <p>asdfasdfsadfsadfsadfsadfsdaf</p>
-        <p>asdfasdfsadfsadfsadfsadfsdaf</p>
-        <p>asdfasdfsadfsadfsadfsadfsdaf</p>
-      </div>
+      <StatisticBlock></StatisticBlock>
     </>
   );
 };
