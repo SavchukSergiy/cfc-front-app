@@ -1,0 +1,48 @@
+.position-relative {
+  display: flex;
+  left: 30%;
+}
+
+.circle-bg {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #47accc;
+  clip-path: polygon(75% 0%, 50% 50%, 0% 140%, 0% 0%);
+  transition: clip-path 0.5s ease;
+  z-index: -1;
+  transform: translate(-30%, 0%);
+}
+
+.value {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.description {
+  position: absolute;
+  top: 50%;
+  left: 1%;
+  font-size: 1.1rem;
+  color: #666;
+  margin-top: 5%;
+  text-align: left;
+}
+
+@media (min-width: 320px) and (max-width: 767.98px) {
+  .position-relative {
+    display: flex;
+    left: 15%;
+  }
+
+  .description {
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    font-size: 1rem;
+    color: #666;
+    margin-top: 15%;
+    text-align: left;
+  }
+}
