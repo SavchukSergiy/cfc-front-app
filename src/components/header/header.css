@@ -1,8 +1,3 @@
-@font-face {
-  font-family: 'MacPaw Fixel';
-  src: url('../../fonts/FixelText/FixelText-SemiBold.ttf') format('truetype');
-}
-
 header {
   font-family: MacPaw Fixel;
   color: black;
