@@ -59,7 +59,7 @@ const Home = () => {
         </div>
       </div>
 
-      <StatisticBlock title1="10" title2="50" title3="100%" description1="Років досвіду" description2="Років гарантії" description3="Фіксована ціна" />
+      <StatisticBlock title1="10" title2="50+" title3="100%" description1="Років досвіду" description2="Років гарантії" description3="Фіксована ціна" />
 
       <InfoBlock backImage={BgdImage} image={AboutImage} arrowImage={AboutArrow}
         title={"COMFORT FRAME"} subTitle={"COMPANY"} description={desctiption} isArrow={true} isBtn={false} isRevert={false} />
@@ -73,6 +73,12 @@ const Home = () => {
 
       <InfoBlock backImage={BgdImage} image={ArchiveImage} arrowImage={AboutArrow}
         title={"АРХІВ"} subTitle={"ЯК ЦЕ БУЛО"} description={desctiption} isArrow={true} isBtn={false} isRevert={false} />
+
+      <div className='d-flex justify-content-center align-items-center mb-5'>
+        <div class="buttons-info-block">
+          <a href="#" class="btn btn-filled">Напишіть нам</a>
+        </div>
+      </div>
     </>
   );
 };
