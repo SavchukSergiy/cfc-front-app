@@ -79,6 +79,7 @@
 .info-title {
   font-size: 3.2rem;
   color: #47accc;
+  text-decoration: none;
 }
 
 .info-subtitle {
@@ -135,6 +136,7 @@
   .info-title {
     font-size: 3rem;
     color: #47accc;
+    text-decoration: none;
   }
 
   .info-subtitle {
