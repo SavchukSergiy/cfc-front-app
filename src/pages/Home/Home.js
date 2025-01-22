@@ -11,9 +11,16 @@ import ArchiveImage from '../../components/generalImages/archive-photo.jpg';
 import Modal from '../../components/modal/modal';
 
 const Home = () => {
+
   const desctiption = (
     <p><b>Comfort Frame Company</b> – виробник модульних каркасних будинків, що пропонує високоякісне, мобільне, доступне та енергоефективне житло. Ми будуємо мобільне, екологічне та енергоефективне, а головне за доступними цінами!</p>
   );
+
+  const menuAboutUsLink = "/aboutus";
+  const menuCottageNewWayLink = "/cottagenewway";
+  const menuArchiveLink = "/archive";
+  const videoLink = "https://www.youtube.com/embed/_VECI_d-8vI";
+
   return (
     <>
       <div className='image-wrapper d-none d-md-block'>
@@ -63,21 +70,21 @@ const Home = () => {
       <StatisticBlock title1="10" title2="50+" title3="100%" description1="Років досвіду" description2="Років гарантії" description3="Фіксована ціна" />
 
       <InfoBlock backImage={BgdImage} image={AboutImage} arrowImage={AboutArrow}
-        title={"COMFORT FRAME"} subTitle={"COMPANY"} description={desctiption} isArrow={true} isBtn={false} isRevert={false} />
+        title={"COMFORT FRAME"} subTitle={"COMPANY"} description={desctiption} isArrow={true} isBtn={false} isRevert={false} link={menuAboutUsLink} />
 
       <InfoBlock backImage={BgdImage} image={DachaImage} arrowImage={AboutArrow}
-        title={"ДАЧА"} subTitle={"ПО-НОВОМУ"} description={desctiption} isArrow={false} isBtn={true} isRevert={true} />
+        title={"ДАЧА"} subTitle={"ПО-НОВОМУ"} description={desctiption} isArrow={false} isBtn={true} isRevert={true} link={menuCottageNewWayLink} />
 
 
       {/* <StatisticBlock title1="ЕКО" title2="ЕНЕРГО" title3="РОЗШИРЕННЯ" description1="Екологічно безпечні матеріали та технології"
         description2="Енергоефективна технологія будівництва та якісні утеплюваніі матеріали" description3="Можливість розширення площі шляхом приєднання додаткового модулю" /> */}
 
       <div class="video-container">
-        <iframe width="100%" height="250vh" src="https://www.youtube.com/embed/_VECI_d-8vI" frameborder="0" allowfullscreen="true"></iframe>
+        <iframe width="100%" height="250vh" src={videoLink} frameborder="0" allowfullscreen="true"></iframe>
       </div>
 
       <InfoBlock backImage={BgdImage} image={ArchiveImage} arrowImage={AboutArrow}
-        title={"АРХІВ"} subTitle={"ЯК ЦЕ БУЛО"} description={desctiption} isArrow={true} isBtn={false} isRevert={false} />
+        title={"АРХІВ"} subTitle={"ЯК ЦЕ БУЛО"} description={desctiption} isArrow={true} isBtn={false} isRevert={false} link={menuArchiveLink} />
 
       <div className='d-flex justify-content-center align-items-center mb-5'>
         <div class="buttons-info-block" id="myButton" data-bs-toggle="modal" data-bs-target="#contactModal">

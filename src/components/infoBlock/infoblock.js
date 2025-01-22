@@ -1,7 +1,8 @@
 import './infoblock.css';
 import { useMediaQuery } from 'react-responsive';
+import { Link } from "react-router-dom";
 
-const InfoBlock = ({ backImage, image, arrowImage, title, subTitle, description, isArrow, isBtn, isRevert, isbackImage }) => {
+const InfoBlock = ({ backImage, image, arrowImage, title, subTitle, description, isArrow, isBtn, isRevert, link, isbackImage }) => {
 
   let pos1, pos2, pos3, infoImgBlock;
 
@@ -51,7 +52,7 @@ const InfoBlock = ({ backImage, image, arrowImage, title, subTitle, description,
             )}
 
             <div className='text-block'>
-              <h1 className='info-title'>{title}</h1>
+              <h1><Link to={link} className="info-title">{title}</Link></h1>
               <span className='info-subtitle'>{subTitle}</span>
               <p className='info-description'>
                 {description}
