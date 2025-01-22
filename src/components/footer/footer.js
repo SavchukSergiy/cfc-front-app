@@ -20,16 +20,16 @@ const Footer = () => {
             +38 095 001 29 06
           </p>
           <div class="d-flex justify-content-center gap-3 social-media">
-            <a href="https://www.facebook.com/profile.php?id=100083554741082" target="_blank" class="text-white icon-custom">
+            <a href="#" class="text-white icon-custom">
               <i class="bi bi-facebook"></i>
             </a>
-            <a href="https://www.instagram.com/comfortframe/" target="_blank" class="text-white icon-custom">
+            <a href="#" class="text-white icon-custom">
               <i class="bi bi-instagram"></i>
             </a>
-            <a href="https://t.me/comfortframecompany" class="text-white icon-custom">
+            <a href="#" class="text-white icon-custom">
               <i class="bi bi-telegram"></i>
             </a>
-            <a href="https://ua.linkedin.com/company/comfort-frame-company?trk=public_post_follow-view-profile" target="_blank" class="text-white icon-custom">
+            <a href="#" class="text-white icon-custom">
               <i class="bi bi-linkedin"></i>
             </a>
           </div>

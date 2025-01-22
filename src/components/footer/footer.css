@@ -3,3 +3,34 @@ footer {
   color: white;
   min-height: 50px;
 }
+
+.custom-test {
+  /* border: 1px solid red; */
+}
+
+.custom-test2 {
+  padding-left: 9%;
+}
+
+.custom-link {
+  text-decoration: none;
+  color: white;
+}
+
+.custom-test3 {
+  padding-left: 5%;
+  padding-right: 3%;
+}
+
+.custom-test4 {
+  padding-left: 7%;
+}
+
+.social-media {
+  /* background-color: #333; */
+  padding-right: 17%;
+}
+
+.icon-custom {
+  font-size: 1.8rem;
+}
