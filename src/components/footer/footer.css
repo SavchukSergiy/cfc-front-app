@@ -34,3 +34,29 @@ footer {
 .icon-custom {
   font-size: 1.8rem;
 }
+
+.copyright-custom {
+  font-size: 0.8rem;
+}
+
+@media (min-width: 320px) and (max-width: 767.98px) {
+  .custom-test4 {
+    padding-left: 25%;
+    padding-top: 5%;
+  }
+
+  .custom-test3 {
+    padding-left: 11%;
+    /* padding-right: 3%; */
+  }
+
+
+  .social-media {
+    /* background-color: #333; */
+    padding-right: 14%;
+  }
+
+  .custom-test2 {
+    padding-left: 34%;
+  }
+}
