@@ -8,6 +8,7 @@ import AboutImage from '../../components/generalImages/45.jpg';
 import AboutArrow from '../../components/generalImages/Arrow 8.jpg';
 import DachaImage from '../../components/generalImages/dacha-new.jpg';
 import ArchiveImage from '../../components/generalImages/archive-photo.jpg';
+import Modal from '../../components/modal/modal';
 
 const Home = () => {
   const desctiption = (
@@ -79,10 +80,12 @@ const Home = () => {
         title={"АРХІВ"} subTitle={"ЯК ЦЕ БУЛО"} description={desctiption} isArrow={true} isBtn={false} isRevert={false} />
 
       <div className='d-flex justify-content-center align-items-center mb-5'>
-        <div class="buttons-info-block">
+        <div class="buttons-info-block" id="myButton" data-bs-toggle="modal" data-bs-target="#contactModal">
           <a href="#" class="btn btn-filled">НАПИШІТЬ НАМ</a>
         </div>
       </div>
+
+      <Modal />
     </>
   );
 };
