@@ -65,18 +65,22 @@ const Home = () => {
         title={"COMFORT FRAME"} subTitle={"COMPANY"} description={desctiption} isArrow={true} isBtn={false} isRevert={false} />
 
       <InfoBlock backImage={BgdImage} image={DachaImage} arrowImage={AboutArrow}
-        title={"ДАЧА"} subTitle={"ПО НОВОМУ"} description={desctiption} isArrow={false} isBtn={true} isRevert={true} />
+        title={"ДАЧА"} subTitle={"ПО-НОВОМУ"} description={desctiption} isArrow={false} isBtn={true} isRevert={true} />
 
 
-      <StatisticBlock title1="ЕКО" title2="ЕНЕРГО" title3="РОЗШИРЕННЯ" description1="Екологічно безпечні матеріали та технології"
-        description2="Енергоефективна технологія будівництва та якісні утеплюваніі матеріали" description3="Можливість розширення площі шляхом приєднання додаткового модулю" />
+      {/* <StatisticBlock title1="ЕКО" title2="ЕНЕРГО" title3="РОЗШИРЕННЯ" description1="Екологічно безпечні матеріали та технології"
+        description2="Енергоефективна технологія будівництва та якісні утеплюваніі матеріали" description3="Можливість розширення площі шляхом приєднання додаткового модулю" /> */}
+
+      <div class="video-container">
+        <iframe width="100%" height="250vh" src="https://www.youtube.com/embed/_VECI_d-8vI" frameborder="0" allowfullscreen="true"></iframe>
+      </div>
 
       <InfoBlock backImage={BgdImage} image={ArchiveImage} arrowImage={AboutArrow}
         title={"АРХІВ"} subTitle={"ЯК ЦЕ БУЛО"} description={desctiption} isArrow={true} isBtn={false} isRevert={false} />
 
       <div className='d-flex justify-content-center align-items-center mb-5'>
         <div class="buttons-info-block">
-          <a href="#" class="btn btn-filled">Напишіть нам</a>
+          <a href="#" class="btn btn-filled">НАПИШІТЬ НАМ</a>
         </div>
       </div>
     </>

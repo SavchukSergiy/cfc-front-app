@@ -35,10 +35,10 @@ const Footer = () => {
           </div>
         </div>
         <div className='col-md-3 d-flex flex-column gap-2 pt-5 pb-4 custom-test custom-test2'>
-          <a href='#' className='custom-link'>ДАЧА ПО НОВОМУ</a>
-          <a href='#' className='custom-link'>КАТАЛОГ</a>
-          <a href='#' className='custom-link'>ПРО НАС</a>
-          <a href='#' className='custom-link'>АРХІВ</a>
+          <Link to="/cottagenewway" className="custom-link">ДАЧА ПО-НОВОМУ</Link>
+          <Link to="/catalog" className="custom-link">КАТАЛОГ</Link>
+          <Link to="/aboutus" className="custom-link">ПРО НАС</Link>
+          <Link to="/archive" className="custom-link">АРХІВ</Link>
         </div>
         <div className='col-md-3 d-flex justify-content-center align-items-center pt-5 pb-4 custom-test'>
           <div class="buttons-info-block">
