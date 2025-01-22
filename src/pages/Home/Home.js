@@ -68,8 +68,8 @@ const Home = () => {
         title={"ДАЧА"} subTitle={"ПО НОВОМУ"} description={desctiption} isArrow={false} isBtn={true} isRevert={true} />
 
 
-      <StatisticBlock title1="ЕКО" title2="ЕНЕРГО" title3="РОЗШИРЕННЯ" description1="Екологічно безпечні матеріали та технології"
-        description2="Енергоефективна технологія будівництва та якісні утеплюваніі матеріали" description3="Можливість розширення площі шляхом приєднання додаткового модулю" />
+      {/* <StatisticBlock title1="ЕКО" title2="ЕНЕРГО" title3="РОЗШИРЕННЯ" description1="Екологічно безпечні матеріали та технології"
+        description2="Енергоефективна технологія будівництва та якісні утеплюваніі матеріали" description3="Можливість розширення площі шляхом приєднання додаткового модулю" /> */}
 
       <div class="video-container">
         <iframe width="100%" height="250vh" src="https://www.youtube.com/embed/_VECI_d-8vI" frameborder="0" allowfullscreen="true"></iframe>
