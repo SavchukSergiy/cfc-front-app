@@ -2,7 +2,7 @@ import './Catalog.css';
 
 const Catalog = () => {
   return (
-    <div class='container'>
+    <div className='container'>
       <h1>Catalog</h1>
     </div>
   );

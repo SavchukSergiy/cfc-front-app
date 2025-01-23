@@ -8,7 +8,7 @@ const Footer = () => {
       <div className='row'>
         <div className='col-md-3 d-flex justify-content-center align-items-center custom-test custom-test4'>
           <Link to="/" className="navbar-brand logo">
-            <img src={logo} alt="Logo" class="img-fluid" height="50%" width="50%" />
+            <img src={logo} alt="Logo" className="img-fluid" height="50%" width="50%" />
           </Link>
         </div>
         <div className='col-md-3 d-flex flex-column justify-content-center align-items-center pt-5 pb-4 custom-test custom-test3'>
@@ -19,18 +19,18 @@ const Footer = () => {
             Пн-Пт 09:00 - 18:00
             +38 095 001 29 06
           </p>
-          <div class="d-flex justify-content-center gap-3 social-media">
-            <a href="#" class="text-white icon-custom">
-              <i class="bi bi-facebook"></i>
+          <div className="d-flex justify-content-center gap-3 social-media">
+            <a href="#" className="text-white icon-custom">
+              <i className="bi bi-facebook"></i>
             </a>
-            <a href="#" class="text-white icon-custom">
-              <i class="bi bi-instagram"></i>
+            <a href="#" className="text-white icon-custom">
+              <i className="bi bi-instagram"></i>
             </a>
-            <a href="#" class="text-white icon-custom">
-              <i class="bi bi-telegram"></i>
+            <a href="#" className="text-white icon-custom">
+              <i className="bi bi-telegram"></i>
             </a>
-            <a href="#" class="text-white icon-custom">
-              <i class="bi bi-linkedin"></i>
+            <a href="#" className="text-white icon-custom">
+              <i className="bi bi-linkedin"></i>
             </a>
           </div>
         </div>
@@ -41,8 +41,8 @@ const Footer = () => {
           <Link to="/archive" className="custom-link">АРХІВ</Link>
         </div>
         <div className='col-md-3 d-flex justify-content-center align-items-center pt-5 pb-4 custom-test'>
-          <div class="buttons-info-block">
-            <a href="#" class="btn btn-outline">ОБРАТИ ДІЛЯНКУ</a>
+          <div className="buttons-info-block">
+            <a href="#" className="btn btn-outline">ОБРАТИ ДІЛЯНКУ</a>
           </div>
         </div>
       </div>

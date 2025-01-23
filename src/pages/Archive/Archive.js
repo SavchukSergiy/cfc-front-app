@@ -2,7 +2,7 @@ import './Archive.css';
 
 const Archive = () => {
   return (
-    <div class='container'>
+    <div className='container'>
       <h1>Archive</h1>
     </div>
   );

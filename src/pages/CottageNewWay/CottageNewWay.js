@@ -2,7 +2,7 @@ import './CottageNewWay.css';
 
 const CottageNewWay = () => {
   return (
-    <div class='container'>
+    <div className='container'>
       <h1>Cottage  new way</h1>
     </div>
   );

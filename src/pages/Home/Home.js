@@ -24,44 +24,44 @@ const Home = () => {
   return (
     <>
       <div className='image-wrapper d-none d-md-block'>
-        <img src={Image} alt="A-Frame foto" class="img-fluid w-100"></img>
+        <img src={Image} alt="A-Frame foto" className="img-fluid w-100"></img>
         <div className='overlay'>
           <div className='content-wrapper'>
             <h1>ВЛАСНЕ ЖИТЛО</h1>
-            <h2>ЗА <span class="highlight">8</span> ТИЖНІВ</h2>
+            <h2>ЗА <span className="highlight">8</span> ТИЖНІВ</h2>
             <p>Ми Comfort Frame Company, і ми робимо модульні каркасні будинки, <br />
               в яких ти можеш жити, відпочивати, працювати та творити!</p>
-            <div class="buttons">
-              <a href="#" class="btn btn-outline">ДАЧА ПО-НОВОМУ</a>
-              <a href="#" class="btn btn-filled">ОБРАТИ ДІЛЯНКУ</a>
+            <div className="buttons">
+              <a href="#" className="btn btn-outline">ДАЧА ПО-НОВОМУ</a>
+              <a href="#" className="btn btn-filled">ОБРАТИ ДІЛЯНКУ</a>
             </div>
             <div className='pagination'>
-              <span class="dot active"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
+              <span className="dot active"></span>
+              <span className="dot"></span>
+              <span className="dot"></span>
             </div>
           </div>
         </div>
       </div>
 
       <div className='image-wrapper d-md-none d-sm-block'>
-        <img src={ImageMobile} alt="A-Frame foto" class="img-fluid w-100"></img>
+        <img src={ImageMobile} alt="A-Frame foto" className="img-fluid w-100"></img>
         <div className='overlay'>
           <div className='content-wrapper'>
             <h1>ВЛАСНЕ ЖИТЛО</h1>
-            <h2>ЗА <span class="highlight">8</span> ТИЖНІВ</h2>
+            <h2>ЗА <span className="highlight">8</span> ТИЖНІВ</h2>
             <p>Ми Comfort Frame Company, і ми робимо модульні каркасні будинки, <br />
               в яких ти можеш жити, відпочивати, працювати та творити!</p>
-            <div class="buttons">
-              <a href="#" class="btn btn-filled">Калькулятор</a>
-              <a href="tel:+380954198334" class="btn-phone">
-                <i class="fas fa-phone-alt"></i>
+            <div className="buttons">
+              <a href="#" className="btn btn-filled">Калькулятор</a>
+              <a href="tel:+380954198334" className="btn-phone">
+                <i className="fas fa-phone-alt"></i>
               </a>
             </div>
             <div className='pagination'>
-              <span class="dot active"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
+              <span className="dot active"></span>
+              <span className="dot"></span>
+              <span className="dot"></span>
             </div>
           </div>
         </div>
@@ -79,16 +79,16 @@ const Home = () => {
       {/* <StatisticBlock title1="ЕКО" title2="ЕНЕРГО" title3="РОЗШИРЕННЯ" description1="Екологічно безпечні матеріали та технології"
         description2="Енергоефективна технологія будівництва та якісні утеплюваніі матеріали" description3="Можливість розширення площі шляхом приєднання додаткового модулю" /> */}
 
-      <div class="video-container">
-        <iframe width="100%" height="250vh" src={videoLink} frameborder="0" allowfullscreen="true"></iframe>
+      <div className="video-container">
+        <iframe width="100%" height="250vh" src={videoLink} frameborder="0" allowFullScreen="true"></iframe>
       </div>
 
       <InfoBlock backImage={BgdImage} image={ArchiveImage} arrowImage={AboutArrow}
         title={"АРХІВ"} subTitle={"ЯК ЦЕ БУЛО"} description={desctiption} isArrow={true} isBtn={false} isRevert={false} link={menuArchiveLink} />
 
       <div className='d-flex justify-content-center align-items-center mb-5'>
-        <div class="buttons-info-block" id="myButton" data-bs-toggle="modal" data-bs-target="#contactModal">
-          <a href="#" class="btn btn-filled">НАПИШІТЬ НАМ</a>
+        <div className="buttons-info-block" id="myButton" data-bs-toggle="modal" data-bs-target="#contactModal">
+          <a href="#" className="btn btn-filled">НАПИШІТЬ НАМ</a>
         </div>
       </div>
 

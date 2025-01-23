@@ -29,14 +29,14 @@ const InfoBlock = ({ backImage, image, arrowImage, title, subTitle, description,
               <>
                 <div className='infoimg-border'></div>
                 <div className='info-overlay'>
-                  <img src={image} alt="info image" class="img-fluid w-100"></img>
+                  <img src={image} alt="info image" className="img-fluid w-100"></img>
                 </div>
               </>
             ) : (
               <>
                 <div className='infoimg-border-revert'></div>
                 <div className='info-overlay-revert'>
-                  <img src={image} alt="info image" class="img-fluid w-100"></img>
+                  <img src={image} alt="info image" className="img-fluid w-100"></img>
                 </div>
               </>
             )}
@@ -45,7 +45,7 @@ const InfoBlock = ({ backImage, image, arrowImage, title, subTitle, description,
           <div className={!isSmallScreen ? `col-md-4 info-text-block  order-first order-${pos2}` : 'col-md-4 info-text-block  order-first order-2'}>
             {isArrow ? (
               <div className='arow-block d-none d-sm-block'>
-                <img src={arrowImage} alt="Arrow image" class="img-fluid"></img>
+                <img src={arrowImage} alt="Arrow image" className="img-fluid"></img>
               </div>
             ) : (
               <></>
@@ -58,8 +58,8 @@ const InfoBlock = ({ backImage, image, arrowImage, title, subTitle, description,
                 {description}
               </p>
               {isBtn ? (
-                <div class="buttons-info-block">
-                  <a href="#" class="btn btn-filled">Детальніше</a>
+                <div className="buttons-info-block">
+                  <a href="#" className="btn btn-filled">Детальніше</a>
                 </div>
               ) : (
                 <> </>
@@ -70,9 +70,9 @@ const InfoBlock = ({ backImage, image, arrowImage, title, subTitle, description,
 
           <div className={!isSmallScreen ? `col-md-3 info-back-image d-none d-md-block order-${pos3}` : 'col-md-3 info-back-image d-none d-md-block order-3'}>
             {!isRevert ? (
-              <img src={backImage} alt="Background image" class="back-image-vector img-fluid w-100"></img>
+              <img src={backImage} alt="Background image" className="back-image-vector img-fluid w-100"></img>
             ) : (
-              <img src={backImage} alt="Background image" class="back-image-vector mirrow img-fluid w-100"></img>
+              <img src={backImage} alt="Background image" className="back-image-vector mirrow img-fluid w-100"></img>
             )}
 
           </div>
