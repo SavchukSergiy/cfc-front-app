@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 // import React, { forceUpdate } from "react";
+import React, { useState } from "react";
 import './header.css';
 import logo from './static-files/logo.svg';
 import LngSwitcher from './../lngswitcher/lngswitcher.js';
@@ -13,7 +14,7 @@ const Header = () => {
   const { t, i18n } = useTranslation();
 
   const changeLanguageHandle = (lang) => {
-    i18n.changeLanguage(lang); // Змінюємо мову
+    i18n.changeLanguage(lang);
   };
 
 
@@ -47,13 +48,13 @@ const Header = () => {
                 <Link to="/cottagenewway" className="nav-link active fs-6" onClick={collapseNavbar}>{t('dachanewway')}</Link>
               </li>
               <li className="nav-item custom-li">
-                <Link to="/catalog" className="nav-link fs-6" onClick={collapseNavbar}>КАТАЛОГ</Link>
+                <Link to="/catalog" className="nav-link fs-6" onClick={collapseNavbar}>{t('catalog')}</Link>
               </li>
               <li className="nav-item custom-li">
-                <Link to="/archive" className="nav-link fs-6" onClick={collapseNavbar}>АРХІВ</Link>
+                <Link to="/archive" className="nav-link fs-6" onClick={collapseNavbar}>{t('archive')}</Link>
               </li>
               <li className="nav-item custom-li">
-                <Link to="/aboutus" className="nav-link fs-6" onClick={collapseNavbar}>ПРО НАС</Link>
+                <Link to="/aboutus" className="nav-link fs-6" onClick={collapseNavbar}>{t('aboutus')}</Link>
               </li>
             </ul>
             <div className="d-flex flex-column flex-lg-row right-block">

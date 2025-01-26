@@ -7,7 +7,7 @@ const LngSwitcher = ({ onButtonClick }) => {
 
   const handleLngFunction = (value) => {
     setLng(value);
-    onButtonClick(lng);
+    onButtonClick(value)
   };
 
 
@@ -23,14 +23,15 @@ const LngSwitcher = ({ onButtonClick }) => {
         {lng}
       </a>
       <ul className="dropdown-menu submenu-custom">
-        {/* <li><a class="dropdown-item" href="#" onClick={(e) => { e.preventDefault();  handleLngFunction('UA'); }}>UA</a></li> */}
         <li><a className="dropdown-item" href="#" onClick={() => handleLngFunction('UA')}>UA</a></li>
         <li>
-          {/* <a class="dropdown-item" href="#" onClick={(e) => { e.preventDefault(); handleLngFunction('EN'); }}> EN</a> */}
           <a className="dropdown-item" href="#" onClick={() => handleLngFunction('EN')}> EN</a>
         </li>
         <li>
           <a className="dropdown-item" href="#" onClick={(e) => { e.preventDefault(); handleLngFunction('PL'); }}> PL</a>
+        </li>
+        <li>
+          <a className="dropdown-item" href="#" onClick={(e) => { e.preventDefault(); handleLngFunction('DE'); }}> DE</a>
         </li>
       </ul>
     </div>
