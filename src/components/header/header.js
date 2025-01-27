@@ -57,7 +57,7 @@ const Header = () => {
                 <LngSwitcher onButtonClick={changeLanguageHandle} />
               </div>
               <div className="nav-item btn-write-us">
-                <div className="custom-button fs-6" id="myButton" data-bs-toggle="modal" data-bs-target="#contactModal">НАПИШІТЬ НАМ</div>
+                <div className="custom-button fs-6" id="myButton" data-bs-toggle="modal" data-bs-target="#contactModal">{t('writeus')}</div>
               </div>
             </div>
           </div>
