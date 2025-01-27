@@ -1,8 +1,10 @@
 import './Archive.css';
+import { useTranslation } from "react-i18next";
 
 const Archive = () => {
+  const { t } = useTranslation();
   return (
-    <div class='container'>
+    <div className='container'>
       <h1>Archive</h1>
     </div>
   );

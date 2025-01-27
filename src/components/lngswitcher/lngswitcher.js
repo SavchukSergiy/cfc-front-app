@@ -1,18 +1,20 @@
 import React, { useState } from "react";
 import './lngswitcher.css';
 
-const LngSwitcher = () => {
+const LngSwitcher = ({ onButtonClick }) => {
+
   const [lng, setLng] = useState('UA');
 
   const handleLngFunction = (value) => {
     setLng(value);
+    onButtonClick(value)
   };
 
 
   return (
     <div className="nav-item dropdown lng-switcher-select-style">
       <a
-        class="nav-link dropdown-toggle"
+        className="nav-link dropdown-toggle"
         href="#"
         role="button"
         data-bs-toggle="dropdown"
@@ -20,13 +22,16 @@ const LngSwitcher = () => {
       >
         {lng}
       </a>
-      <ul class="dropdown-menu submenu-custom">
-        <li><a class="dropdown-item" href="#" onClick={(e) => { e.preventDefault(); handleLngFunction('UA'); }}>UA</a></li>
+      <ul className="dropdown-menu submenu-custom">
+        <li><a className="dropdown-item" href="#" onClick={() => handleLngFunction('UA')}>UA</a></li>
         <li>
-          <a class="dropdown-item" href="#" onClick={(e) => { e.preventDefault(); handleLngFunction('EN'); }}> EN</a>
+          <a className="dropdown-item" href="#" onClick={() => handleLngFunction('EN')}> EN</a>
         </li>
         <li>
-          <a class="dropdown-item" href="#" onClick={(e) => { e.preventDefault(); handleLngFunction('PL'); }}> PL</a>
+          <a className="dropdown-item" href="#" onClick={(e) => { e.preventDefault(); handleLngFunction('PL'); }}> PL</a>
+        </li>
+        <li>
+          <a className="dropdown-item" href="#" onClick={(e) => { e.preventDefault(); handleLngFunction('DE'); }}> DE</a>
         </li>
       </ul>
     </div>
