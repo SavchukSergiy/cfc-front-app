@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import './lngswitcher.css';
 
 const LngSwitcher = ({ onButtonClick }) => {
 
-  const [lng, setLng] = useState('UA');
+  const [lng, setLng] = useState(localStorage.getItem('language') || 'en');
 
   const handleLngFunction = (value) => {
     setLng(value);

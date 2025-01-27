@@ -13,6 +13,7 @@ const Header = () => {
 
   const changeLanguageHandle = (lang) => {
     i18n.changeLanguage(lang);
+    localStorage.setItem("language", lang);
   };
 
 
