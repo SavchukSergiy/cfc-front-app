@@ -1,8 +1,17 @@
 import './modal.css';
 import { useTranslation } from "react-i18next";
+import React, { useState } from 'react';
+import InputMask from 'react-input-mask';
 
 const Modal = () => {
   const { t } = useTranslation();
+
+  const [phone, setPhone] = useState('');
+
+  const handleChange = (e) => {
+    setPhone(e.target.value);
+  };
+
   return (
     <>
       <div className="modal fade" id="contactModal" tabIndex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
@@ -24,7 +33,15 @@ const Modal = () => {
                 </div>
                 <div className="mb-3">
                   <label for="phone" className="form-label">{t('modal-phone')}</label>
-                  <input type="tel" className="form-control" id="phone" placeholder="+380 (00) 000 00 00" required></input>
+                  {/* <input type="tel" className="form-control" id="phone" placeholder="+380 (00) 000 00 00" required></input> */}
+                  <InputMask
+                    className='form-control'
+                    mask="+38 (099) 999-99-99"
+                    value={phone}
+                    onChange={handleChange}
+                  >
+                    {(inputProps) => <input {...inputProps} type="tel" />}
+                  </InputMask>
                 </div>
                 <div className="mb-3">
                   <label for="message" class="form-label">{t('modal-message')}</label>
