@@ -29,5 +29,13 @@
   "info-block-3-subtitle": "WIE ES WAR",
   "footer-address-part1": "Gebiet Wolhynien. Bezirk Luzk, Dorf Buyany comfort.frame.company@gmail.com",
   "footer-address-part2": "Mo-Fr 09:00 - 18:00+38 095 001 29 06",
-  "footer-btn": "WÄHLEN SIE EIN GRUNDSTÜCK"
+  "footer-btn": "WÄHLEN SIE EIN GRUNDSTÜCK",
+  "modal-name": "NAME*",
+  "modal-mail": "E-MAIL",
+  "modal-phone": "TELEFON*",
+  "modal-message": "NACHRICHT",
+  "modal-send-btn": "SCHICKEN",
+  "modal-required-field": "*Erforderlich zum Ausfüllen",
+  "modal-placeholder-name": "Alexander/Anastasia",
+  "modal-placeholder-msg": "Ich möchte wissen, wie man ein Haus kauft …"
 }

@@ -29,5 +29,13 @@
   "info-block-3-subtitle": "JAK TO BYŁO",
   "footer-address-part1": "Obwód wołyński. Rejon łucki, wieś Bujany comfort.frame.company@gmail.com",
   "footer-address-part2": "Pon.-Pt. 09:00 - 18:00 +38 095 001 29 06",
-  "footer-btn": "WYBIERZ DZIAŁKĘ"
+  "footer-btn": "WYBIERZ DZIAŁKĘ",
+  "modal-name": "NAZWA*",
+  "modal-mail": "E-MAIL",
+  "modal-phone": "TELEFON*",
+  "modal-message": "WIADOMOŚĆ",
+  "modal-send-btn": "WYSŁAĆ",
+  "modal-required-field": "*Wymagane do wypełnienia",
+  "modal-placeholder-name": "Aleksander/Anastazja",
+  "modal-placeholder-msg": "Chcę wiedzieć, jak kupić dom..."
 }

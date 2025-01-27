@@ -29,5 +29,13 @@
   "info-block-3-subtitle": "ЯК ЦЕ БУЛО",
   "footer-address-part1": "Волинська обл. Луцький р-н, с. Буяни comfort.frame.company@gmail.com",
   "footer-address-part2": "Пн-Пт 09:00 - 18:00 +38 095 001 29 06",
-  "footer-btn" : "ОБРАТИ ДІЛЯНКУ"
+  "footer-btn": "ОБРАТИ ДІЛЯНКУ",
+  "modal-name": "ІМ'Я*",
+  "modal-mail": "E-MAIL",
+  "modal-phone": "ТЕЛЕФОН*",
+  "modal-message": "ПОВІДОМЛЕННЯ",
+  "modal-send-btn": "НАДІСЛАТИ",
+  "modal-required-field": "*Обов'язково для заповнення",
+  "modal-placeholder-name": "Олександр/Анастасія",
+  "modal-placeholder-msg": "Я хочу дізнатися, як купити будинок..."
 }

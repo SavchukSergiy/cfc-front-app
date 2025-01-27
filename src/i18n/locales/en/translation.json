@@ -29,5 +29,13 @@
   "info-block-3-subtitle": "HOW IT WAS",
   "footer-address-part1": "Volyn region. Lutsk district, Buyany village comfort.frame.company@gmail.com",
   "footer-address-part2": "Mon-Fri 09:00 - 18:00 +38 095 001 29 06",
-  "footer-btn": "CHOOSE A PLOT"
+  "footer-btn": "CHOOSE A PLOT",
+  "modal-name": "NAME*",
+  "modal-mail": "E-MAIL",
+  "modal-phone": "PHONE*",
+  "modal-message": "MESSAGE",
+  "modal-send-btn": "SEND",
+  "modal-required-field": "*Required to be filled in",
+  "modal-placeholder-name": "Alexander/Anastasia",
+  "modal-placeholder-msg": "I want to know how to buy a house..."
 }

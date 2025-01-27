@@ -13,31 +13,30 @@ const Modal = () => {
               <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body">
-              <p className="text-center text-muted">Знайдіть відповіді на свої питання з нашим менеджером</p>
               <form>
                 <div className="mb-3">
-                  <label for="name" className="form-label">ІМ’Я*</label>
-                  <input type="text" className="form-control" id="name" placeholder="Олександр/Анастасія" required></input>
+                  <label for="name" className="form-label">{t('modal-name')}</label>
+                  <input type="text" className="form-control" id="name" placeholder={t('modal-placeholder-name')} required></input>
                 </div>
                 <div className="mb-3">
-                  <label for="email" className="form-label">E-MAIL</label>
+                  <label for="email" className="form-label">{t('modal-mail')}</label>
                   <input type="email" className="form-control" id="email" placeholder="post@gmail.com"></input>
                 </div>
                 <div className="mb-3">
-                  <label for="phone" className="form-label">ТЕЛЕФОН*</label>
+                  <label for="phone" className="form-label">{t('modal-phone')}</label>
                   <input type="tel" className="form-control" id="phone" placeholder="+380 (00) 000 00 00" required></input>
                 </div>
                 <div className="mb-3">
-                  <label for="message" class="form-label">ПОВІДОМЛЕННЯ</label>
-                  <textarea className="form-control" id="message" rows="3" placeholder="Я хочу дізнатися, як купити будинок..."></textarea>
+                  <label for="message" class="form-label">{t('modal-message')}</label>
+                  <textarea className="form-control" id="message" rows="3" placeholder={t('modal-placeholder-msg')}></textarea>
                 </div>
                 <div className="d-grid">
-                  <button type="submit" className="btn btn-primary">НАДІСЛАТИ</button>
+                  <button type="submit" className="btn btn-primary">{t('modal-send-btn')}</button>
                 </div>
               </form>
             </div>
             <div className="modal-footer">
-              <p className="text-muted">*Обов’язково для заповнення</p>
+              <p className="text-muted">{t('modal-required-field')}</p>
             </div>
           </div>
         </div>
