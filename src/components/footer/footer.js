@@ -1,8 +1,10 @@
 import './footer.css';
 import { Link } from "react-router-dom";
 import logo from './images/logo.png';
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <footer>
       <div className='row'>
@@ -13,11 +15,9 @@ const Footer = () => {
         </div>
         <div className='col-md-3 d-flex flex-column justify-content-center align-items-center pt-5 pb-4 custom-test custom-test3'>
           <p>
-            Волинська обл. Луцький р-н, с. Буяни
-            comfort.frame.company@gmail.com
+            {t('footer-address-part1')}
             <br />
-            Пн-Пт 09:00 - 18:00
-            +38 095 001 29 06
+            {t('footer-address-part2')}
           </p>
           <div className="d-flex justify-content-center gap-3 social-media">
             <a href="#" className="text-white icon-custom">
@@ -35,14 +35,14 @@ const Footer = () => {
           </div>
         </div>
         <div className='col-md-3 d-flex flex-column gap-2 pt-5 pb-4 custom-test custom-test2'>
-          <Link to="/cottagenewway" className="custom-link">ДАЧА ПО-НОВОМУ</Link>
-          <Link to="/catalog" className="custom-link">КАТАЛОГ</Link>
-          <Link to="/aboutus" className="custom-link">ПРО НАС</Link>
-          <Link to="/archive" className="custom-link">АРХІВ</Link>
+          <Link to="/cottagenewway" className="custom-link">{t('dachanewway')}</Link>
+          <Link to="/catalog" className="custom-link">{t('catalog')}</Link>
+          <Link to="/aboutus" className="custom-link">{t('aboutus')}</Link>
+          <Link to="/archive" className="custom-link">{t('archive')}</Link>
         </div>
         <div className='col-md-3 d-flex justify-content-center align-items-center pt-5 pb-4 custom-test'>
           <div className="buttons-info-block">
-            <a href="#" className="btn btn-outline">ОБРАТИ ДІЛЯНКУ</a>
+            <a href="#" className="btn btn-outline">{t('footer-btn')}</a>
           </div>
         </div>
       </div>

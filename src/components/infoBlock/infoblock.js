@@ -1,8 +1,10 @@
 import './infoblock.css';
 import { useMediaQuery } from 'react-responsive';
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const InfoBlock = ({ backImage, image, arrowImage, title, subTitle, description, isArrow, isBtn, isRevert, link, isbackImage }) => {
+  const { t } = useTranslation();
 
   let pos1, pos2, pos3, infoImgBlock;
 
@@ -59,7 +61,7 @@ const InfoBlock = ({ backImage, image, arrowImage, title, subTitle, description,
               </p>
               {isBtn ? (
                 <div className="buttons-info-block">
-                  <a href="#" className="btn btn-filled">Детальніше</a>
+                  <a href="#" className="btn btn-filled">{t('info-block-2-btn')}</a>
                 </div>
               ) : (
                 <> </>

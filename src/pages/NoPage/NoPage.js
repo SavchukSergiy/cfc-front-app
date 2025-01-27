@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 import './NoPage.css';
+import { useTranslation } from "react-i18next";
 
 const NoPage = () => {
+  const { t } = useTranslation();
   return (
     <div className="d-flex align-items-center justify-content-center vh-100">
       <div className="text-center">
