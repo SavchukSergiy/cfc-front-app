@@ -1,6 +1,4 @@
 import { Link } from "react-router-dom";
-// import React, { forceUpdate } from "react";
-import React, { useState } from "react";
 import './header.css';
 import logo from './static-files/logo.svg';
 import LngSwitcher from './../lngswitcher/lngswitcher.js';
@@ -25,9 +23,6 @@ const Header = () => {
     }
   }
 
-  function ownAlert() {
-    alert('Text');
-  }
   return (
     <>
       <header>
